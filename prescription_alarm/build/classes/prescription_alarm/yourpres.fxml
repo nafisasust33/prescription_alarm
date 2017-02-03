@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="503.0" style="-fx-background-color: #ffad33;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prescription_alarm.YourpresController">
+   <children>
+      <Label layoutX="125.0" layoutY="21.0" prefHeight="40.0" prefWidth="254.0" text="           Your Prescription">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="DeleteButton" layoutX="106.0" layoutY="392.0" mnemonicParsing="false" onAction="#HandleDeleteButton" text="Delete" />
+      <Button fx:id="DeleteAll" layoutX="215.0" layoutY="392.0" mnemonicParsing="false" onAction="#HandleDeleteAll" prefHeight="25.0" prefWidth="74.0" text="Delete all" />
+      <Button fx:id="BackButton" layoutX="351.0" layoutY="392.0" mnemonicParsing="false" onAction="#HandleBackButton" text="Back" />
+      <TableView fx:id="MedicineTable" layoutX="-1.0" layoutY="78.0" prefHeight="303.0" prefWidth="503.0" style="-fx-background-color: #ffad33;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="78.0">
+        <columns>
+          <TableColumn fx:id="MedicineNameColumn" prefWidth="198.0" style="-fx-alignment: CENTER; -fx-background-color: grey;" text="Medicine Name" />
+          <TableColumn fx:id="InstructionsColumn" prefWidth="166.0" style="-fx-alignment: CENTER; -fx-background-color: grey;" text="Instructions" />
+            <TableColumn fx:id="DoseColumn" prefWidth="138.0" style="-fx-alignment: CENTER; -fx-background-color: grey;" text="Dose Per Day" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
